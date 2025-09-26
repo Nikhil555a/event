@@ -69,7 +69,7 @@ export default function Hero() {
           <img
             src={taj}
             alt="jaipur"
-            className=" w-full lg:w-72 md:w-96 mt-8 md:mt-0"
+            className=" w-full lg:w-92 md:w-96 mt-8 md:mt-0"
           />
         </div>
       </section>
