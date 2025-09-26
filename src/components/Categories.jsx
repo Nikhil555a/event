@@ -138,7 +138,7 @@ const Categories = () => {
         </h2>
 
         {/* Mobile: horizontal scroll, 2x2 grid */}
-        <div className="sm:hidden flex overflow-x-auto gap-4 pb-3 snap-x snap-mandatory">
+        <div className="sm:hidden flex overflow-x-auto gap-4 pb-3 snap-x snap-mandatory scrollbar-hide">
           {groups.map((group, index) => (
             <div
               key={index}
