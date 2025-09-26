@@ -208,6 +208,7 @@
 
 
 
+
 import React, { useState, useEffect } from 'react';
 import { FaMapMarkerAlt, FaSearch, FaChevronDown, FaTimes, FaPlusCircle, FaRegUserCircle, FaMobileAlt, FaQuestionCircle } from 'react-icons/fa';
 import { CiSearch } from "react-icons/ci";
@@ -311,7 +312,7 @@ const Navbar = () => {
                         <div>
                             <button
                                 onClick={handleSignInClick}
-                                className="bg-gray-200 text-gray-700 font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition-colors"
+                                className=" text-gray-700 font-semibold py-2 px-6  "
                             >
                                 Sign In
                             </button>
@@ -371,12 +372,41 @@ const Navbar = () => {
                                     <span className="absolute left-0 bottom-0 w-full h-[2px] bg-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                                 </a>
                                 {item === 'Entertainment' && hoveredItem === 'Entertainment' && (
-                                    <div className="absolute top-full left-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-lg
+                                    <div className="absolute top-full left-0 mt-3 w-36 bg-white text-gray-800 rounded-lg shadow-lg
                                         transition-opacity duration-300 opacity-100"
                                     >
-                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Sub-item 1</a>
-                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Sub-item 2</a>
-                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Sub-item 3</a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Music</a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Concerts</a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Parties</a>
+                                         <a href="#" className="block px-4 py-2 hover:bg-gray-100">Performance</a>
+                                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">Comedy</a>
+                                           <a href="#" className="block px-4 py-2 hover:bg-gray-100">Dance</a>
+                                    </div>
+                                )}
+                                 {item === 'Art & Theatre' && hoveredItem === 'Art & Theatre' && (
+                                    <div className="absolute top-full left-0 mt-3 w-36 bg-white text-gray-800 rounded-lg shadow-lg
+                                        transition-opacity duration-300 opacity-100"
+                                    >
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Fine Arts</a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Theatre</a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Literary Arts</a>
+                                         <a href="#" className="block px-4 py-2 hover:bg-gray-100">Crafts</a>
+                                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">Photography</a>
+                                           <a href="#" className="block px-4 py-2 hover:bg-gray-100">Cooking</a>
+                                    </div>
+                                )}
+                                 {item === 'More' && hoveredItem === 'More' && (
+                                    <div className="absolute top-full left-0 mt-3 w-36 bg-white text-gray-800 rounded-lg shadow-lg
+                                        transition-opacity duration-300 opacity-100"
+                                    >
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Sports</a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Exhibitions</a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Fashion</a>
+                                         <a href="#" className="block px-4 py-2 hover:bg-gray-100">Wellness</a>
+                                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">Yoga</a>
+                                           <a href="#" className="block px-4 py-2 hover:bg-gray-100">Kids</a>
+                                             <a href="#" className="block px-4 py-2 hover:bg-gray-100">Workshops</a>
+                                               <a href="#" className="block px-4 py-2 hover:bg-gray-100">Webinar</a>
                                     </div>
                                 )}
                             </div>
